@@ -4,8 +4,36 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  
-    {% if page_paths %}
+  </div>
+
+  <button class="hamburger-button" onclick="hamburgerMenu();" role="button" aria-label="Hamburger menu button">
+    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+  </button>
+
+  <a href="/" class="logo" role="link" aria-label="Home">
+    <img alt="MvvmCross" src="/assets/img/logo/MvvmCross-logo.png" role="img" aria-label="Logo">
+  </a>
+  <nav class="navigation" role="navigation" aria-label="Navigation">
+    <ul role="menu" aria-hidden="true" aria-label="Navigation menu">
+      <li role="menuitem" aria-label="Navigation menu item">
+        <a href="/" class="logo" role="menuitem" aria-label="Home">
+          <img alt="MvvmCross" src="/assets/img/logo/MvvmCross-logo.png" role="img" aria-label="Logo">
+        </a>
+      </li>
+      <li role="menuitem"><a href="/blog" role="menuitem" aria-label="Blog">Blog</a></li>
+      <li role="menuitem"><a href="/documentation" role="menuitem" aria-label="Documentation">Documentation</a></li>
+      <li role="menuitem"><a href="/support" role="menuitem" aria-label="Support">Support</a></li>
+      </ul>
+  </nav>
+
+  <div class="searchbox" role="search" aria-label="Search">
+      <form action="/search" id="searchthis" method="get" role="form" aria-label="Search form">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="search" id="search" name="query" placeholder="Search..." role="textbox" aria-label="Search textbox">
+      </form>
+  </div>
+</header>
+  <!--  {% if page_paths %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -29,4 +57,4 @@
       </nav>
     {% endif %}
   </div>
-</header>
+</header> -->
