@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <title>Rohan's Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  </head>
+
+  <body>
+          <!-- Header -->
+            <header id="header">
+              <h1><a href="https://rgprabhu12.github.io/index.html"><strong>Rohan Prabhu</strong></a></h1>
+              <nav>
+                <ul>
+                  <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+                  <li><a href="/posts.html">Posts</a></li>
+                </ul>
+              </nav>
+            </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                {{ page.date | date: date_format }}
+              </time>
+              {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+              {% endif %}</p>
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+          {% if site.disqus.shortname %}
+            {% include disqus_comments.html %}
+          {% endif %}
+        </article>
+      </div>
+    </main>
+
+    <footer id="footer" class="panel">
+      <div class="inner split">
+        <div>
+          <section>
+            <p>A way to show my photos off and a project for me to learn web development with.</p>
+          </section>
+          <section>
+            <h2>Follow me on ...</h2>
+            <ul class="icons">
+              <li><a href="https://www.twitter.com/rohan2031 " class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="https://www.facebook.com/rohan2031" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="https://www.instagram.com/rohan2031/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="https://github.com/rgprabhu12" class="icon fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="https://www.linkedin.com/in/rohan-prabhu/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <p>Or go the old-fashioned way and
+            <a href="mailto:rgprabhu12@gmail.com" target="_top">send me an email!</a></p>
+          <!--<section>
+            <h2>Get in touch</h2>
+            <form method="post" action="#">
+              <div class="field half first">
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="field half">
+                <input type="text" name="email" id="email" placeholder="Email" />
+              </div>
+              <div class="field">
+                <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="Send" class="special" /></li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+            </form>
+          </section>-->
+        </div>
+      </div>
+    </footer>
+      <!-- Scripts -->
+  			<script src="/assets/js/jquery.min.js"></script>
+  			<script src="/assets/js/jquery.poptrox.min.js"></script>
+  			<script src="/assets/js/skel.min.js"></script>
+  			<script src="/assets/js/util.js"></script>
+  			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  			<script src="/assets/js/main.js"></script>
+  </body>
+
+</html>
