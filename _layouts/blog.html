@@ -18,7 +18,7 @@
               <nav>
                 <ul>
                   <li><a href="#footer" class="icon fa-info-circle">About</a></li>
-                  <li><a href="/posts.html">Posts</a></li>
+                  <li><a href="/posts.html">Blog</a></li>
                 </ul>
               </nav>
             </header>
@@ -29,22 +29,32 @@
 
           {{ content }}
 
-          <p><font size="7"; color = white;>POSTS</font></p>
+          <h1 class="page-heading">Blog</h1>
+          <div style = "float:left;">
+            <ul class="post-list">
+              {% for post in site.posts %}
+                <li>
+                  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                  <span class="post-meta">{{ post.date | date: date_format }}</span>
+                  <h2>
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                  </h2>
+                </li>
+              {% endfor %}
+            </ul>
 
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-                <h2>
-                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                </h2>
-              </li>
-            {% endfor %}
-          </ul>
-
-          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+            <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
+        </div>
+        <div id="container" style="float:right;">
+        	<ul>
+              	    <li><img src="images/13.jpg" width="400" height="600" /></li>
+                    <li><img src="images/14.jpg" width="400" height="500" /></li>
+                    <li><img src="images/15.jpg" width="400" height="600" /></li>
+                    <li><img src="images/16.jpg" width="400" height="500" /></li>
+              </ul>
+              <span class="button prevButton"></span>
+              <span class="button nextButton"></span>
+        </div>
 
         </div>
       </div>
