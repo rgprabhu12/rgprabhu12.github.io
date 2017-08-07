@@ -85,10 +85,21 @@
             </section>
           </div>
           <div>
-
-            <!--<section>
-              <h2>Get in touch</h2>
-              <form method="post" action="#">
+            <section>
+              <h2>BLOG</h2>
+              <ul class="post-list">
+                {% for post in site.posts %}
+                  <li>
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <h2>
+                      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    </h2>
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+              <!--<form method="post" action="#">
                 <div class="field half first">
                   <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
