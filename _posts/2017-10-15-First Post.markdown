@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  First Post!/Growing up
-date:   2017-10-15 19:00:00 -0500
+date:   2017-10-15 08:00:00 -0500
 categories: intro post
 ---
 
