@@ -29,11 +29,11 @@
 
           {{ content }}
 
-          <h1 class="page-heading">Blog</h1>
-          <div style = "float:left; width: auto;">
+          <h1>Blog</h1>
+          <div>
             <ul class="post-list">
               {% for post in site.posts %}
-                <li>
+                <li style="list-style-type: none;">
                   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                   <span class="post-meta">{{ post.date | date: date_format }}</span>
                   <h2>
@@ -44,7 +44,7 @@
             </ul>
 
             <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>-->
-        </div>
+        <!--</div>
         <div id="container" style="float:right;">
         	<ul>
               	    <li><img src="images/13.jpg" width="400" height="600" /></li>
@@ -54,7 +54,7 @@
               </ul>
               <span class="button prevButton"></span>
               <span class="button nextButton"></span>
-        </div>
+        </div> -->
 
         </div>
       </div>

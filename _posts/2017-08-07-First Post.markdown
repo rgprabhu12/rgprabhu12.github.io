@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  First Post!/Growing up
-date:   2017-08-07 19:00:00 -0500
+date:   2017-10-15 19:00:00 -0500
 categories: intro post
 ---
+
+(Written August 7th)
 
 As I sat in the quiet train car of an NJ transit and looked at the rain-drenched towns, houses, and people through the window, I thought it would be a good time to make this first blog post.
 
