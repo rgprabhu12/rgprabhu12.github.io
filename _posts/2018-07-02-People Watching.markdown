@@ -3,7 +3,6 @@ layout: post
 title:  People Watching
 date:   2018-07-02 08:00:00 -0500
 summary: Opinion on people watching from the Newark Airport - The benefits of thinking about other peoples' circumstances and how much we learn from observation.
-categories:
 ---
 
 (Written August 3rd, 2017)
