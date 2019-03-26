@@ -22,6 +22,9 @@ ___
 Whenever someone asks me what race or ethnicity I am, I say Indian. I’m from North Carolina, born and raised, but I’m an Indian.
 Through conversations with other first-generation immigrants (either born in US or immigrated at a very young age), I see that more and more, it’s the case that people identify as American or (insert race here)-American. Through my experiences, especially recently with the above-mentioned RocketWorld event, more and more, I’m increasingly less and less proud to be an American.
 
+And before anyone reads into this too much - I know that I'm blessed to be from a country like America where I've been given so many different benefits (free K-12 education, stable government, the ability to practice my religion, etc.) over my 21 years. I'm thankful for what I've been given.
+But in criticizing my government and asking for more, I'm utilizing one of those rights and benefits I've been given - to vocalize my concerns and complaints and work for our country to be better than it has been in the past few years (or increasingly we've seen, decades).
+
 In America, we hear about what our government does and in a sense, we turn a blind eye / the news cycle moves too fast to have any sort of sensible reaction or action about it from the people.
 
 Abroad, this isn’t the case. What small amounts of news they hear about the US is the big and the bad stuff. From the little girl above, to the other elementary school students and teachers talking about our president, to an Iranian man I met a few weeks ago saying that he hates our government but not American citizens — it really shows how much our reputation and standing in the world has taken a hit in the last few years.
