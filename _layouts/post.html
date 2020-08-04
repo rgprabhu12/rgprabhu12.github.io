@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-121784595-1');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121784595-1');
+  </script>
 
 
-    <title>Rohan's Website - {{page.title}}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  </head>
+  <title>Rohan's Website - {{page.title}}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
-  <body>
-    {% include header.html %}
-    {% include footer.html %}
-    <!-- Main -->
-    <div id = "main">
-      <div style="width:10%"></div>
-      <div class="wrapper" style = "width: 80%;">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<body>
+  {% include header.html %}
+  {% include footer.html %}
+  <!-- Main -->
+  <div id="main">
+    <div style="width:10%"></div>
+    <div class="wrapper" style="width: 80%;">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-            <p class="post-meta">
-              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                {{ page.date | date: date_format }}
-              </time>
-              {% if page.author %}
-                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-              {% endif %}</p>
-          </header>
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+          <p class="post-meta">
+            <h5><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><h5>
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ page.date | date: date_format }}
+            </time>
+            {% if post %}
+            {% assign categories = post.categories %}
+            {% else %}
+            {% assign categories = page.categories %}
+            {% endif %}
+            <h5>Tags:<h5>
+            {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+        </header>
+        <br>
 
-          <div class="post-content" itemprop="articleBody">
-            {{ content }}
-          </div>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
 
-          {% if site.disqus.shortname %}
-            {% include disqus_comments.html %}
-          {% endif %}
-        </article>
-      </div>
-      <div style="width:10%"></div>
+        {% if site.disqus.shortname %}
+        {% include disqus_comments.html %}
+        {% endif %}
+      </article>
     </div>
-      <!-- Scripts -->
-  			<script src="/assets/js/jquery.min.js"></script>
-  			<script src="/assets/js/jquery.poptrox.min.js"></script>
-  			<script src="/assets/js/skel.min.js"></script>
-  			<script src="/assets/js/util.js"></script>
-  			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  			<script src="/assets/js/main.js"></script>
-  </body>
+    <div style="width:10%"></div>
+  </div>
+  <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/skel.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/assets/js/main.js"></script>
+</body>
 
 </html>

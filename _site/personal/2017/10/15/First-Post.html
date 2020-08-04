@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-121784595-1');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121784595-1');
+  </script>
 
 
-    <title>Rohan's Website - First Post!/Growing up</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  </head>
+  <title>Rohan's Website - First Post!/Growing up</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
-  <body>
-    <header id="header">
+<body>
+  <header id="header">
   <nav>
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/posts.html">Blog</a></li>
       <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/photos.html">Photos</a></li>
       <li><a href="#footer">Contact</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">More...</button>
+        <div class="dropdown-content">
+          <li><a href="/photos.html">Photos</a></li>
+        </div>
+      </div>
     </ul>
   </nav>
 </header>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer id="footer" class="panel">
     <div class="inner split">
       <div>
@@ -68,7 +76,7 @@
                 
                 <span class="post-meta">Mar 25, 2019</span>
                 <h2>
-                  <a class="post-link" href="/2019/03/25/RocketWorld!.html">RocketWorld!</a>
+                  <a class="post-link" href="/personal/2019/03/25/RocketWorld!.html">RocketWorld!</a>
                 </h2>
               </li>
             
@@ -76,7 +84,7 @@
                 
                 <span class="post-meta">Jul 2, 2018</span>
                 <h2>
-                  <a class="post-link" href="/2018/07/02/People-Watching.html">People Watching</a>
+                  <a class="post-link" href="/personal/2018/07/02/People-Watching.html">People Watching</a>
                 </h2>
               </li>
             
@@ -84,7 +92,7 @@
                 
                 <span class="post-meta">Oct 15, 2017</span>
                 <h2>
-                  <a class="post-link" href="/2017/10/15/First-Post.html">First Post!/Growing up</a>
+                  <a class="post-link" href="/personal/2017/10/15/First-Post.html">First Post!/Growing up</a>
                 </h2>
               </li>
             
@@ -95,24 +103,30 @@
     </div>
   </footer>
 
-    <!-- Main -->
-    <div id = "main">
-      <div style="width:10%"></div>
-      <div class="wrapper" style = "width: 80%;">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <!-- Main -->
+  <div id="main">
+    <div style="width:10%"></div>
+    <div class="wrapper" style="width: 80%;">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">First Post!/Growing up</h1>
-            <p class="post-meta">
-              <time datetime="2017-10-15T09:00:00-04:00" itemprop="datePublished">
-                
-                Oct 15, 2017
-              </time>
-              </p>
-          </header>
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">First Post!/Growing up</h1>
+          <p class="post-meta">
+            <h5><time datetime="2017-10-15T09:00:00-04:00" itemprop="datePublished"><h5>
+              
+              Oct 15, 2017
+            </time>
+            
+            <h5>Tags:<h5>
+            
+            <a href="/categories/#Personal">Personal</a>
+            
+            
+        </header>
+        <br>
 
-          <div class="post-content" itemprop="articleBody">
-            <p>(Written August 7th)</p>
+        <div class="post-content" itemprop="articleBody">
+          <p>(Written August 7th)</p>
 
 <p>As I sat in the quiet train car of an NJ transit and looked at the rain-drenched towns, houses, and people through the window, I thought it would be a good time to make this first blog post.</p>
 
@@ -132,20 +146,20 @@ We wasted our time as kids hoping to be older and “settled”, but now we’re
 <p>Eventually we’ll flop back into the water and start swimming like our parents did, making every right movement, succeeding in life. Eventually we’ll forget all about the time where we didn’t know what the hell we were doing and maybe that there was ever a time that we were above the water. (If you want a better thing to read than this blathering post, read “This is Water” by David Foster Wallace.) But while we’re here, we should take advantage of it. Revel in the ignorance and not knowing what the right decision is, how it might affect us in the future, how it could fix everything or ruin it all.
 Obsessing about the future ruins things in the present. Looking to the future, not enjoying where you are, fearing of missing out on something else but not taking every potential opportunity and living life to the fullest, that’s where everyone loses. Now or later, it’ll happen.</p>
 
-          </div>
+        </div>
 
-          
-        </article>
-      </div>
-      <div style="width:10%"></div>
+        
+      </article>
     </div>
-      <!-- Scripts -->
-  			<script src="/assets/js/jquery.min.js"></script>
-  			<script src="/assets/js/jquery.poptrox.min.js"></script>
-  			<script src="/assets/js/skel.min.js"></script>
-  			<script src="/assets/js/util.js"></script>
-  			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  			<script src="/assets/js/main.js"></script>
-  </body>
+    <div style="width:10%"></div>
+  </div>
+  <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/skel.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/assets/js/main.js"></script>
+</body>
 
 </html>

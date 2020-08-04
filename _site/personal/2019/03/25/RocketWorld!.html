@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-121784595-1');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121784595-1');
+  </script>
 
 
-    <title>Rohan's Website - RocketWorld!</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  </head>
+  <title>Rohan's Website - RocketWorld!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
-  <body>
-    <header id="header">
+<body>
+  <header id="header">
   <nav>
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/posts.html">Blog</a></li>
       <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/photos.html">Photos</a></li>
       <li><a href="#footer">Contact</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">More...</button>
+        <div class="dropdown-content">
+          <li><a href="/photos.html">Photos</a></li>
+        </div>
+      </div>
     </ul>
   </nav>
 </header>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer id="footer" class="panel">
     <div class="inner split">
       <div>
@@ -68,7 +76,7 @@
                 
                 <span class="post-meta">Mar 25, 2019</span>
                 <h2>
-                  <a class="post-link" href="/2019/03/25/RocketWorld!.html">RocketWorld!</a>
+                  <a class="post-link" href="/personal/2019/03/25/RocketWorld!.html">RocketWorld!</a>
                 </h2>
               </li>
             
@@ -76,7 +84,7 @@
                 
                 <span class="post-meta">Jul 2, 2018</span>
                 <h2>
-                  <a class="post-link" href="/2018/07/02/People-Watching.html">People Watching</a>
+                  <a class="post-link" href="/personal/2018/07/02/People-Watching.html">People Watching</a>
                 </h2>
               </li>
             
@@ -84,7 +92,7 @@
                 
                 <span class="post-meta">Oct 15, 2017</span>
                 <h2>
-                  <a class="post-link" href="/2017/10/15/First-Post.html">First Post!/Growing up</a>
+                  <a class="post-link" href="/personal/2017/10/15/First-Post.html">First Post!/Growing up</a>
                 </h2>
               </li>
             
@@ -95,24 +103,30 @@
     </div>
   </footer>
 
-    <!-- Main -->
-    <div id = "main">
-      <div style="width:10%"></div>
-      <div class="wrapper" style = "width: 80%;">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <!-- Main -->
+  <div id="main">
+    <div style="width:10%"></div>
+    <div class="wrapper" style="width: 80%;">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">RocketWorld!</h1>
-            <p class="post-meta">
-              <time datetime="2019-03-25T09:00:00-04:00" itemprop="datePublished">
-                
-                Mar 25, 2019
-              </time>
-              </p>
-          </header>
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">RocketWorld!</h1>
+          <p class="post-meta">
+            <h5><time datetime="2019-03-25T09:00:00-04:00" itemprop="datePublished"><h5>
+              
+              Mar 25, 2019
+            </time>
+            
+            <h5>Tags:<h5>
+            
+            <a href="/categories/#Personal">Personal</a>
+            
+            
+        </header>
+        <br>
 
-          <div class="post-content" itemprop="articleBody">
-            <p>A few weeks ago, I was volunteering through the International Society for a program called RocketWorld. A group of people, each from a different country, goes to an elementary school here in the suburbs of Manchester and just introduces the students to their country - the landmarks, culture, food, etc. Of course, my country to show off was the US, so I had photos of the Statue of Liberty, Mount Rushmore, the Hollywood Sign, the White House, among other different memorials and sights. I was showing off “southern/NC things”, like BBQ and hushpuppies, showing them a map of North Carolina and photos of the Raleigh skyline and my parents’ house in Cary, in an attempt to try and share some of America that might not be as mainstream across the pond as New York City or Los Angeles.</p>
+        <div class="post-content" itemprop="articleBody">
+          <p>A few weeks ago, I was volunteering through the International Society for a program called RocketWorld. A group of people, each from a different country, goes to an elementary school here in the suburbs of Manchester and just introduces the students to their country - the landmarks, culture, food, etc. Of course, my country to show off was the US, so I had photos of the Statue of Liberty, Mount Rushmore, the Hollywood Sign, the White House, among other different memorials and sights. I was showing off “southern/NC things”, like BBQ and hushpuppies, showing them a map of North Carolina and photos of the Raleigh skyline and my parents’ house in Cary, in an attempt to try and share some of America that might not be as mainstream across the pond as New York City or Los Angeles.</p>
 
 <p>I got some general questions, like “Where’s New York?” or “Where does Lebron play?” or “Do you see YouTubers around a lot?” (this last one was lost on me - I was never much of a YouTube vlog watcher). But then… it began. I showed a picture of the US Capital, which a lot of kids thought was the White House at first, and then I followed that up with a picture of the White House, and a kid at the back said “OH That’s where TRUMP lives”.</p>
 
@@ -136,20 +150,20 @@ But in criticizing my government and asking for more, I’m utilizing one of tho
 
 <p>Abroad, this isn’t the case. What small amounts of news they hear about the US is the big and the bad stuff. From the little girl above, to the other elementary school students and teachers talking about our president, to an Iranian man I met a few weeks ago saying that he hates our government but not American citizens — it really shows how much our reputation and standing in the world has taken a hit in the last few years.</p>
 
-          </div>
+        </div>
 
-          
-        </article>
-      </div>
-      <div style="width:10%"></div>
+        
+      </article>
     </div>
-      <!-- Scripts -->
-  			<script src="/assets/js/jquery.min.js"></script>
-  			<script src="/assets/js/jquery.poptrox.min.js"></script>
-  			<script src="/assets/js/skel.min.js"></script>
-  			<script src="/assets/js/util.js"></script>
-  			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  			<script src="/assets/js/main.js"></script>
-  </body>
+    <div style="width:10%"></div>
+  </div>
+  <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/skel.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/assets/js/main.js"></script>
+</body>
 
 </html>

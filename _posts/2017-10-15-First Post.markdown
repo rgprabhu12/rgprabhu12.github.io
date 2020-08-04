@@ -3,6 +3,7 @@ layout: post
 title:  First Post!/Growing up
 date:   2017-10-15 08:00:00 -0500
 summary: First blog post ever, just the ramblings of a then-19 year old. Thinking about the past and the expectations we set before and how (kinda) disenchanted we are with how it is right now, but with hope for the future.
+categories: Personal
 ---
 
 (Written August 7th)

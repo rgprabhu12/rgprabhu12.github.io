@@ -35,7 +35,7 @@
               {{ content }}
 
               <h1> Blog </h1>
-              <div style = "width: 80%">
+              <div style = "width: 90%">
                 <ul class="post-list">
                   {% for post in site.posts %}
                     <li style="list-style-type: none;">
@@ -44,7 +44,8 @@
                       <h2>
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
-                        <p>TLDR: {{post.summary | escape}} </p>
+                        <p>TLDR: {{post.summary | escape}} <br>
+                        Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{post.categories}}</a></p>
                     </li>
                   {% endfor %}
                 </ul>
