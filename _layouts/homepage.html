@@ -5,15 +5,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
 
-		  gtag('config', 'UA-121784595-1');
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-121784595-1');
 		</script>
 
 
@@ -25,138 +28,25 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
+
 	<body>
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<?php
-				    include($_SERVER['DOCUMENT_ROOT']."header.php");
-				    doit();
-				?>
-				<?php
-				    include($_SERVER['DOCUMENT_ROOT']."footer.php");
-				    doit();
-				?>
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/26.jpg" class="image"><img src="images/26.jpg" alt="" /></a>
-							<h2>East Side Gallery Mural, Berlin Wall</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/25.jpg" class="image"><img src="images/25.jpg" alt="" /></a>
-							<h2>Brandenburg Gate, Berlin</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/27.jpg" class="image"><img src="images/27.jpg" alt="" /></a>
-							<h2>Manchester City vs. Burnley (FA Cup), Etihad Stadium, Manchester</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/28.jpg" class="image"><img src="images/28.jpg" alt="" /></a>
-							<h2>Whitby Abbey, Whitby</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/29.jpg" class="image"><img src="images/29.jpg" alt="" /></a>
-							<h2>The University of Manchester, Oxford Road</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/31.jpg" class="image"><img src="images/31.jpg" alt="" /></a>
-							<h2>King's College Chapel, Cambridge</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/33.jpg" class="image"><img src="images/33.jpg" alt="" /></a>
-							<h2>Conwy Castle, Wales</h2>
-							<p>Taken on an iPhone XS Max</p>
-						</article>
-						<article class="thumb">
-							<a href="images/22.jpg" class="image"><img src="images/22.jpg" alt="" /></a>
-							<h2>Machu Picchu</h2>
-							<p>Taken on an Canon EOS M100</p>
-						</article>
-						<article class="thumb">
-							<a href="images/23.jpg" class="image"><img src="images/23.jpg" alt="" /></a>
-							<h2>"You Are Here" exhibit at the North Carolina Museum of Art, Raleigh</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/24.jpg" class="image"><img src="images/24.jpg" alt="" /></a>
-							<h2>Sunrise over the mountains of Peru near Machu Picchu</h2>
-							<p>Taken on an Canon EOS M100</p>
-						</article>
-						<article class="thumb">
-							<a href="images/01.jpg" class="image"><img src="images/01.jpg" alt="" /></a>
-							<h2>Washington Monument</h2>
-							<p>Taken on an iPhone 7, edited with Photoshop Express</p>
-						</article>
-						<article class="thumb">
-							<a href="images/16.jpg" class="image"><img src="images/16.jpg" alt="" /></a>
-							<h2>Freedom Tower from Washington Square Park</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/02.jpg" class="image"><img src="images/02.jpg" alt="" /></a>
-							<h2>La Mancha, Spain</h2>
-							<p>Taken on an iPhone 6</p>
-						</article>
-						<article class="thumb">
-							<a href="images/03.jpg" class="image"><img src="images/03.jpg" alt="" /></a>
-							<h2>Freedom Balloon Festival, Fuquay-Varina, NC</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/04.jpg" class="image"><img src="images/04.jpg" alt="" /></a>
-							<h2>Yosemite National Park</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/05.jpg" class="image"><img src="images/05.jpg" alt="" /></a>
-							<h2>Honnavar Old Dock, Karnataka, India</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/06.jpg" class="image"><img src="images/06.jpg" alt="" /></a>
-							<h2>Le Château Frontenac, Quebec City, Quebec</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/07.jpg" class="image"><img src="images/07.jpg" alt="" /></a>
-							<h2>Mt. Phillips, Philmont Scout Ranch, New Mexico</h2>
-							<p>Taken on an iPhone 6</p>
-						</article>
-						<article class="thumb">
-							<a href="images/09.jpg" class="image"><img src="images/09.jpg" alt="" /></a>
-							<h2>St. Louis Arch, St. Louis, Missouri</h2>
-							<p>Taken on a Nikon D5200</p>
-						</article>
-						<article class="thumb">
-							<a href="images/10.jpg" class="image"><img src="images/10.jpg" alt="" /></a>
-							<h2>Wrightsville Beach, NC</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/14.jpg" class="image"><img src="images/14.jpg" alt="" /></a>
-							<h2>Freedom Balloon Festival, Fuquay-Varina, NC</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/13.jpg" class="image"><img src="images/13.jpg" alt="" /></a>
-							<h2>NC State Belltower, Raleigh, NC</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-						<article class="thumb">
-							<a href="images/17.jpg" class="image"><img src="images/17.jpg" alt="" /></a>
-							<h2>Hunt Library, NC State University, Raleigh</h2>
-							<p>Taken on an iPhone 7</p>
-						</article>
-					</div>
+		<div id="wrapper">
+			{% include header.html %}
+			{% include footer.html %}
+			<!-- Main -->
+			<div id="main">
+				<div class="center">
+					<img src="images/prof.jpg" style="vertical-align: middle; width: 200px; height: 200px; border-radius: 50%;">
+					<h1>Rohan Prabhu</h1>
+					<code>919 | NCSU '20 | IAA '21 | ? </code>
+					<br>
+					<br>
+					<h4> Welcome to the site! This is an outlet for me to test out some different web development techniques (Jekyll, HTML, CSS)
+						  and also to display some of my other hobbies and side projects. Stay tuned for more! <h4>
+				</div>
 			</div>
-
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -165,4 +55,5 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
