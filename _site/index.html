@@ -22,7 +22,7 @@
 
 		<title>Rohan's Website - Home Page</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -32,15 +32,26 @@
 	<body>
 		<!-- Wrapper -->
 		<div id="wrapper">
-			<header id="header">
-  <h1><strong>Rohan Prabhu</strong></h1>
+			<header id = "header" class="desktop-only-header">
   <nav>
+    <strong>Rohan Prabhu</strong>
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/posts.html">Blog</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/photos.html">Photo Gallery</a></li>
       <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<header id = "header" class="mobile-only-header">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/posts.html">Blog</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/photos.html">Photo Gallery</a></li>
     </ul>
   </nav>
 </header>

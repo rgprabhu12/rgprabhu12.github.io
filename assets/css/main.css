@@ -1427,7 +1427,6 @@
 		#header h1 {
 			color: #a0a0a1;
 			display: inline-block;
-			font-size: 1em;
 			line-height: 1;
 			margin: 0;
 			vertical-align: middle;
@@ -1500,7 +1499,7 @@
 						color: #ffffff;
 						display: inline-block;
 						letter-spacing: 0.1em;
-						padding: 0 1.65em;
+						padding: 0 1em;
 						text-transform: uppercase;
 					}
 
@@ -1548,7 +1547,7 @@
 
 			#header nav > ul > li a {
 				font-size: 0.9em;
-				padding: 0 1.15em;
+				padding: 0 .5em;
 			}
 
 	}
@@ -2089,3 +2088,20 @@
 		#footer .copyright a {
 			color: inherit;
 		}
+
+
+
+
+.mobile-only-header {
+	  display: none;
+}
+
+	/* Small devices (tablets, 768px and up) */
+
+	@media (max-width: 768px) {
+	  .desktop-only-header {
+	    display: none;
+	  }
+	  .mobile-only-header {
+	    display: inherit;
+	  }
