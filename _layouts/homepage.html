@@ -28,8 +28,14 @@
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<?php include "header.php" ?>
-				<?php include "footer.php" ?>
+				<?php
+				    include($_SERVER['DOCUMENT_ROOT']."header.php");
+				    doit();
+				?>
+				<?php
+				    include($_SERVER['DOCUMENT_ROOT']."footer.php");
+				    doit();
+				?>
 				<!-- Main -->
 					<div id="main">
 						<article class="thumb">
