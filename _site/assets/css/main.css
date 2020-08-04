@@ -1487,7 +1487,6 @@
 		} */
 
 		#header nav {
-			position: absolute;
 			right: 0;
 			top: 0;
 		}
@@ -2158,8 +2157,9 @@
 		/* Dropdown Content (Hidden by Default) */
 		.dropdown-content {
 		  display: none;
-		  position: absolute;
+		  position: fixed;
 		  z-index: 1;
+			background: #1f2224;
 		}
 
 		/* Links inside the dropdown */
