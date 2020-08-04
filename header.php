@@ -1,4 +1,5 @@
-<header id="header">
+<?php
+echo '<header id="header">
   <h1><strong>Rohan Prabhu</strong></h1>
   <nav>
     <ul>
@@ -8,4 +9,5 @@
       <li><a href="#footer">More</a></li>
     </ul>
   </nav>
-</header>
+</header>'
+?>

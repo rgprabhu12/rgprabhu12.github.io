@@ -1,4 +1,5 @@
-<!-- Footer -->
+<?php
+echo '<!-- Footer -->
   <footer id="footer" class="panel">
     <div class="inner split">
       <div>
@@ -54,4 +55,5 @@
         </section>-->
       </div>
     </div>
-  </footer>
+  </footer>'
+  ?>
