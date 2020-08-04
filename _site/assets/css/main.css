@@ -1520,7 +1520,7 @@
 	@media screen and (max-width: 736px) {
 
 		body {
-			padding: 4em 0 0 0;
+			padding: 0 1em 0 0;
 		}
 
 		#header {
@@ -1530,7 +1530,6 @@
 			transform: translateY(0);
 			bottom: auto;
 			height: 4em;
-			padding: 0 1em;
 			top: 0;
 		}
 
@@ -2092,16 +2091,16 @@
 
 
 
-.mobile-only-header {
+/* .mobile-only-header {
 	  display: none;
 }
 
 	/* Small devices (tablets, 768px and up) */
 
-	@media (max-width: 768px) {
+	/* @media (max-width: 768px) {
 	  .desktop-only-header {
 	    display: none;
 	  }
 	  .mobile-only-header {
 	    display: inherit;
-	  }
+	  } */ */
