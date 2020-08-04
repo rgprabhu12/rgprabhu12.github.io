@@ -36,8 +36,19 @@
         <h1> Categories </h1>
         <div style="width: 80%; padding-left: 3em;">
           {{ content }}
-
-          {% for category in site.categories %}
+          <h3>Personal</h3>
+          <ul>
+          {% for post in site.categories.Personal%}
+            <li>
+              <article class="archive-item">
+                <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <br>
+              </article>
+            </li>
+          {% endfor %}
+          </ul>
+          <!-- {% for category in site.categories %}
           <div class="archive-group">
             {% capture category_name %}{{ category | first }}{% endcapture %}
             <div id="#{{ category_name | slugize }}"></div>
@@ -48,23 +59,25 @@
             <ul>
             {% for post in site.categories[category_name] %}
             <article class="archive-item">
-                <li><h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4></li>
+              <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <br>
             </article>
             {% endfor %}
             </ul>
           </div>
-          {% endfor %}
+          {% endfor %} -->
         </div>
       </div>
     </div>
 
-      <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.poptrox.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

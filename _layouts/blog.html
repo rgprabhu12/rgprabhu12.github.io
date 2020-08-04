@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-121784595-1');
@@ -22,45 +25,52 @@
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
-  <body>
-    <!-- Wrapper -->
-      <div id="wrapper">
-        {% include header.html %}
-        {% include footer.html %}
-        <!-- Main -->
+<body>
+  <!-- Wrapper -->
+  <div id="wrapper">
+    {% include header.html %}
+    {% include footer.html %}
+    <!-- Main -->
 
-        <div id = "main">
-            <div class="home"; style = "width: 100%;">
+    <div id="main">
+      <div class="home" ; style="width: 100%;">
 
-              {{ content }}
+        {{ content }}
 
-              <h1> Blog </h1>
-              <div style = "width: 90%">
-                <ul class="post-list">
-                  {% for post in site.posts %}
-                    <li style="list-style-type: none;">
-                      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                      <span class="post-meta">{{ post.date | date: date_format }}</span>
-                      <h2>
-                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h2>
-                        Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{post.categories}}</a>
-                        <p>TLDR: {{post.summary | escape}} <br>
-                    </li>
-                  {% endfor %}
-                </ul>
-            </div>
-          </div>
+        <h1> Blog </h1>
+        <div style="width: 80%; padding-left: 3em;">
+          <ul class="post-list">
+            {% for post in site.posts %}
+            <li style="list-style-type: none;">
+              <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h5>Categories: {% if post %}
+                {% assign categories = post.categories %}
+                {% else %}
+                {% assign categories = page.categories %}
+                {% endif %}
+                {% for category in categories %}
+                <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+              </h5>
+                <h5>TLDR: {{post.summary | escape}}</h5>
+                <br>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-        </main>
       </div>
-    <!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.poptrox.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/assets/js/main.js"></script>
-  </body>
+    </div>
+    </main>
+  </div>
+  <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/skel.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/assets/js/main.js"></script>
+</body>
 
 </html>

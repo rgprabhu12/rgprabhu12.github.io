@@ -3,7 +3,7 @@ layout: post
 title:  RocketWorld!
 date:   2019-03-25 08:00:00 -0500
 summary: An experience I had volunteering with the International Society and reflections on my feelings of identity as an American.
-categories: Personal
+categories: [Personal, Education]
 ---
 
 A few weeks ago, I was volunteering through the International Society for a program called RocketWorld. A group of people, each from a different country, goes to an elementary school here in the suburbs of Manchester and just introduces the students to their country - the landmarks, culture, food, etc. Of course, my country to show off was the US, so I had photos of the Statue of Liberty, Mount Rushmore, the Hollywood Sign, the White House, among other different memorials and sights. I was showing off “southern/NC things”, like BBQ and hushpuppies, showing them a map of North Carolina and photos of the Raleigh skyline and my parents’ house in Cary, in an attempt to try and share some of America that might not be as mainstream across the pond as New York City or Los Angeles.
