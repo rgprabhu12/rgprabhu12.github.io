@@ -41,18 +41,9 @@
               {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
               {{ page.date | date: date_format }}
             </time>
-            {% if post %}
-            {% assign categories = post.categories %}
-            {% else %}
-            {% assign categories = page.categories %}
-            {% endif %}
-            <h5>Tags:<h5>
-            {% for category in categories %}
-            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-            {% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
+            <br>
+            Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{page.categories}}</a>
         </header>
-        <br>
 
         <div class="post-content" itemprop="articleBody">
           {{ content }}

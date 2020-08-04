@@ -44,8 +44,8 @@
                       <h2>
                         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                       </h2>
+                        Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{post.categories}}</a>
                         <p>TLDR: {{post.summary | escape}} <br>
-                        Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{post.categories}}</a></p>
                     </li>
                   {% endfor %}
                 </ul>
