@@ -7,26 +7,14 @@
 <html>
 
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'UA-121784595-1');
-		</script>
-
-
-		<title>Rohan's Website - Home Page</title>
+		{% include analytics.html %}
+		<title>{{ site.title }} - {{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="{{ '/assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ '/assets/css/ie9.css' | relative_url }}" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ '/assets/css/ie8.css' | relative_url }}" /><![endif]-->
 	</head>
 
 	<body>
@@ -37,25 +25,24 @@
 			<!-- Main -->
 			<div id="main">
 				<div class="center">
-					<img src="images/prof.JPG" style="vertical-align: middle; width: 200px; height: 200px; border-radius: 50%;">
+						<img src="{{ '/images/prof.JPG' | relative_url }}" style="vertical-align: middle; width: 200px; height: 200px; border-radius: 50%;">
 					<h1>Rohan Prabhu</h1>
 					<code>NCSU '20</code>
 					<code>IAA '21</code>
 					<br>
 					<br>
-					<div style = "vertical-align: middle; margin: auto; text-align: center; width: 80%";>
-						<h4> Welcome to my site! This is an outlet for me to test out some different web development techniques (Jekyll, HTML, CSS)
-						  and also to display some of my other hobbies and side projects. Stay tuned for more! <h4>
-					</div>
+				</div>
+				<div class="home-about">
+					{{ content }}
 				</div>
 			</div>
 			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+				<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+				<script src="{{ '/assets/js/jquery.poptrox.min.js' | relative_url }}"></script>
+				<script src="{{ '/assets/js/skel.min.js' | relative_url }}"></script>
+				<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+				<!--[if lte IE 8]><script src="{{ '/assets/js/ie/respond.min.js' | relative_url }}"></script><![endif]-->
+				<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 	</body>
 

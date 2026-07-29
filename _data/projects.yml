@@ -1,0 +1,58 @@
+- name: Fantasy Football Predictions
+  status: In progress
+  timeframe: July 2026 to present
+  stack:
+    - Python
+    - Polars
+    - pandas
+    - scikit-learn
+    - pytest
+  summary: NFL fantasy football projections, simulations, backtesting, and betting portfolio experiments.
+  highlights:
+    - Python package structure with tests, linting, and environment setup already in place.
+    - Historical ingestion work is the next planned milestone after the initial repository foundation.
+  repo_label: Local repository in active development
+  dashboard_label: Dashboard planned
+
+- name: Homelab Data Platform
+  status: Architecture phase
+  timeframe: June 2026 to present
+  stack:
+    - Python
+    - PostgreSQL
+    - PostGIS
+    - Docker
+    - Airflow
+    - Spark
+  summary: Production-minded local data platform for batch ingestion, geospatial analytics, orchestration, and SQL modeling.
+  highlights:
+    - Strong documentation-first structure with architecture notes, ADRs, and compose definitions.
+    - Repository is organized to separate infrastructure, reusable code, SQL assets, and learning material.
+  repo_url: https://github.com/rgprabhu12/homelab-infra
+  dashboard_label: Maps and dashboards planned
+
+- name: AI Travel Agent
+  status: Early design
+  timeframe: July 2026
+  stack:
+    - LLM workflows
+    - live search orchestration
+    - points and cash valuation
+  summary: Trustworthy travel-planning assistant focused on live inventory, points comparisons, and explainable recommendations.
+  highlights:
+    - Workflow is designed around structured trip requests, parallel searches, and explicit tradeoff reporting.
+    - Current workspace contains the operating spec and trust rules; repository scaffolding has not been published yet.
+
+- name: Personal Website
+  status: Active
+  timeframe: Ongoing
+  stack:
+    - Jekyll
+    - GitHub Pages
+    - HTML
+    - Sass
+  summary: Personal site for blog posts, photography, and a portfolio view across active projects.
+  highlights:
+    - Uses a customized static site layout instead of stock Minima templates for the public-facing pages.
+    - This pass converts the Projects section from a placeholder into a data-driven page that can grow with the workspace.
+  repo_url: https://github.com/rgprabhu12/rgprabhu12.github.io

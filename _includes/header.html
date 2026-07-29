@@ -1,11 +1,17 @@
-<header id="header" style="display: inline-block;">
+<header id="header">
   <nav>
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/posts.html">Blog</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="#footer">Contact</a></li>
-      <li><a href="/photos.html">Photos</a></li> 
+    <ul class="main-nav">
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/photos/' | relative_url }}">Photos</a></li>
+      <li class="nav-icons">
+        <a href="mailto:rgprabhu12@gmail.com" class="icon fa-envelope" target="_top"><span class="label">Email</span></a>
+        <a href="https://www.twitter.com/rohan2031" class="icon fa-twitter" target="_blank" rel="noreferrer"><span class="label">Twitter</span></a>
+        <a href="https://www.facebook.com/rohan2031" class="icon fa-facebook" target="_blank" rel="noreferrer"><span class="label">Facebook</span></a>
+        <a href="https://www.instagram.com/rohan2031/" class="icon fa-instagram" target="_blank" rel="noreferrer"><span class="label">Instagram</span></a>
+        <a href="https://github.com/rgprabhu12" class="icon fa-github" target="_blank" rel="noreferrer"><span class="label">GitHub</span></a>
+        <a href="https://www.linkedin.com/in/rohan-prabhu/" class="icon fa-linkedin" target="_blank" rel="noreferrer"><span class="label">LinkedIn</span></a>
+      </li>
     </ul>
   </nav>
 </header>

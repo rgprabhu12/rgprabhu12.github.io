@@ -2,27 +2,14 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-121784595-1');
-  </script>
-
-
-  <title>Rohan's Website - Blog</title>
+  {% include analytics.html %}
+  <title>{{ site.title }} - {{ page.title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 8]><script src="{{ '/assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ '/assets/css/ie9.css' | relative_url }}" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ '/assets/css/ie8.css' | relative_url }}" /><![endif]-->
 </head>
 
 <body>
@@ -50,7 +37,7 @@
                 {% assign categories = page.categories %}
                 {% endif %}
                 {% for category in categories %}
-                <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                <a href="{{ '/categories/' | relative_url }}#{{category|slugize}}">{{category}}</a>
                 {% unless forloop.last %}&nbsp;{% endunless %}
                 {% endfor %}
               </h5>
@@ -65,12 +52,12 @@
     </main>
   </div>
   <!-- Scripts -->
-  <script src="/assets/js/jquery.min.js"></script>
-  <script src="/assets/js/jquery.poptrox.min.js"></script>
-  <script src="/assets/js/skel.min.js"></script>
-  <script src="/assets/js/util.js"></script>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="/assets/js/main.js"></script>
+  <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery.poptrox.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/skel.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+  <!--[if lte IE 8]><script src="{{ '/assets/js/ie/respond.min.js' | relative_url }}"></script><![endif]-->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 
 </html>

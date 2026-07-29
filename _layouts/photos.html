@@ -6,24 +6,14 @@
 -->
 <html>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784595-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-121784595-1');
-		</script>
-
-
-		<title>Rohan's Website - Photos</title>
+		{% include analytics.html %}
+		<title>{{ site.title }} - {{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="{{ '/assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ '/assets/css/ie9.css' | relative_url }}" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ '/assets/css/ie8.css' | relative_url }}" /><![endif]-->
 	</head>
 	<body>
 
@@ -34,117 +24,117 @@
 				<!-- Main -->
 					<div id="main">
 						<article class="thumb">
-							<a href="images/26.jpg" class="image"><img src="images/26.jpg" alt="" /></a>
+							<a href="{{ '/images/26.jpg' | relative_url }}" class="image"><img src="{{ '/images/26.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption" >East Side Gallery Mural, Berlin Wall</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/25.jpg" class="image"><img src="images/25.jpg" alt="" /></a>
+							<a href="{{ '/images/25.jpg' | relative_url }}" class="image"><img src="{{ '/images/25.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption" >Brandenburg Gate, Berlin</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/27.jpg" class="image"><img src="images/27.jpg" alt="" /></a>
+							<a href="{{ '/images/27.jpg' | relative_url }}" class="image"><img src="{{ '/images/27.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Manchester City vs. Burnley (FA Cup), Etihad Stadium, Manchester</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/28.jpg" class="image"><img src="images/28.jpg" alt="" /></a>
+							<a href="{{ '/images/28.jpg' | relative_url }}" class="image"><img src="{{ '/images/28.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Whitby Abbey, Whitby</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/29.jpg" class="image"><img src="images/29.jpg" alt="" /></a>
+							<a href="{{ '/images/29.jpg' | relative_url }}" class="image"><img src="{{ '/images/29.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">The University of Manchester, Oxford Road</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/31.jpg" class="image"><img src="images/31.jpg" alt="" /></a>
+							<a href="{{ '/images/31.jpg' | relative_url }}" class="image"><img src="{{ '/images/31.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">King's College Chapel, Cambridge</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/33.jpg" class="image"><img src="images/33.jpg" alt="" /></a>
+							<a href="{{ '/images/33.jpg' | relative_url }}" class="image"><img src="{{ '/images/33.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Conwy Castle, Wales</h2>
 							<p>Taken on an iPhone XS Max</p>
 						</article>
 						<article class="thumb">
-							<a href="images/22.jpg" class="image"><img src="images/22.jpg" alt="" /></a>
+							<a href="{{ '/images/22.jpg' | relative_url }}" class="image"><img src="{{ '/images/22.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Machu Picchu</h2>
 							<p>Taken on an Canon EOS M100</p>
 						</article>
 						<article class="thumb">
-							<a href="images/23.jpg" class="image"><img src="images/23.jpg" alt="" /></a>
+							<a href="{{ '/images/23.jpg' | relative_url }}" class="image"><img src="{{ '/images/23.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">"You Are Here" exhibit at the North Carolina Museum of Art, Raleigh</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/24.jpg" class="image"><img src="images/24.jpg" alt="" /></a>
+							<a href="{{ '/images/24.jpg' | relative_url }}" class="image"><img src="{{ '/images/24.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Sunrise over the mountains of Peru near Machu Picchu</h2>
 							<p>Taken on an Canon EOS M100</p>
 						</article>
 						<article class="thumb">
-							<a href="images/01.jpg" class="image"><img src="images/01.jpg" alt="" /></a>
+							<a href="{{ '/images/01.jpg' | relative_url }}" class="image"><img src="{{ '/images/01.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Washington Monument</h2>
 							<p>Taken on an iPhone 7, edited with Photoshop Express</p>
 						</article>
 						<article class="thumb">
-							<a href="images/16.jpg" class="image"><img src="images/16.jpg" alt="" /></a>
+							<a href="{{ '/images/16.jpg' | relative_url }}" class="image"><img src="{{ '/images/16.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Freedom Tower from Washington Square Park</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/02.jpg" class="image"><img src="images/02.jpg" alt="" /></a>
+							<a href="{{ '/images/02.jpg' | relative_url }}" class="image"><img src="{{ '/images/02.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">La Mancha, Spain</h2>
 							<p>Taken on an iPhone 6</p>
 						</article>
 						<article class="thumb">
-							<a href="images/03.jpg" class="image"><img src="images/03.jpg" alt="" /></a>
+							<a href="{{ '/images/03.jpg' | relative_url }}" class="image"><img src="{{ '/images/03.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Freedom Balloon Festival, Fuquay-Varina, NC</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/04.jpg" class="image"><img src="images/04.jpg" alt="" /></a>
+							<a href="{{ '/images/04.jpg' | relative_url }}" class="image"><img src="{{ '/images/04.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Yosemite National Park</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/05.jpg" class="image"><img src="images/05.jpg" alt="" /></a>
+							<a href="{{ '/images/05.jpg' | relative_url }}" class="image"><img src="{{ '/images/05.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Honnavar Old Dock, Karnataka, India</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/06.jpg" class="image"><img src="images/06.jpg" alt="" /></a>
+							<a href="{{ '/images/06.jpg' | relative_url }}" class="image"><img src="{{ '/images/06.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Le Château Frontenac, Quebec City, Quebec</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/07.jpg" class="image"><img src="images/07.jpg" alt="" /></a>
+							<a href="{{ '/images/07.jpg' | relative_url }}" class="image"><img src="{{ '/images/07.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Mt. Phillips, Philmont Scout Ranch, New Mexico</h2>
 							<p>Taken on an iPhone 6</p>
 						</article>
 						<article class="thumb">
-							<a href="images/09.jpg" class="image"><img src="images/09.jpg" alt="" /></a>
+							<a href="{{ '/images/09.jpg' | relative_url }}" class="image"><img src="{{ '/images/09.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">St. Louis Arch, St. Louis, Missouri</h2>
 							<p>Taken on a Nikon D5200</p>
 						</article>
 						<article class="thumb">
-							<a href="images/10.jpg" class="image"><img src="images/10.jpg" alt="" /></a>
+							<a href="{{ '/images/10.jpg' | relative_url }}" class="image"><img src="{{ '/images/10.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Wrightsville Beach, NC</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/14.jpg" class="image"><img src="images/14.jpg" alt="" /></a>
+							<a href="{{ '/images/14.jpg' | relative_url }}" class="image"><img src="{{ '/images/14.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Freedom Balloon Festival, Fuquay-Varina, NC</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/13.jpg" class="image"><img src="images/13.jpg" alt="" /></a>
+							<a href="{{ '/images/13.jpg' | relative_url }}" class="image"><img src="{{ '/images/13.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">NC State Belltower, Raleigh, NC</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
 						<article class="thumb">
-							<a href="images/17.jpg" class="image"><img src="images/17.jpg" alt="" /></a>
+							<a href="{{ '/images/17.jpg' | relative_url }}" class="image"><img src="{{ '/images/17.jpg' | relative_url }}" alt="" /></a>
 							<h2 class = "photoCaption">Hunt Library, NC State University, Raleigh</h2>
 							<p>Taken on an iPhone 7</p>
 						</article>
@@ -152,12 +142,12 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/jquery.poptrox.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/skel.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+			<!--[if lte IE 8]><script src="{{ '/assets/js/ie/respond.min.js' | relative_url }}"></script><![endif]-->
+			<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 	</body>
 </html>
