@@ -4,3 +4,6 @@
 .sass-cache/
 vendor/
 _site/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
